@@ -1,4 +1,4 @@
-# .bashrc
+# .bashrc(Pop!_OS)
 ![bashrc](screenshots/bashrc.png)
 # bash in Windows Terminal
 ![bashrc](screenshots/bashWindowsTerminal.png)
