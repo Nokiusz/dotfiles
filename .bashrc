@@ -1,8 +1,6 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-
-#Parsing git branch
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
@@ -62,24 +60,16 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-  #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-
-        PS1="\[\e[0;31m\]\u \[\e[0;32m\]\w\[\e[0;93m\]\$(parse_git_branch)\[\033[00m\]$ \[\e[0m\]"
+ PS1="\[\e[0;31m\]\u: \[\e[0;32m\]\w\[\e[0;93m\]\$(parse_git_branch)\[\033[00m\]$ \[\e[0m\]"
 else
-    #PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-
-      
-      PS1="\[\e[0;31m\]\u \[\e[0;32m\]\w\[\e[0;93m\]\$(parse_git_branch)\[\033[00m\]$ \[\e[0m\]"
-
+ PS1="\[\e[0;31m\]\u: \[\e[0;32m\]\w\[\e[0;93m\]\$(parse_git_branch)\[\033[00m\]$ \[\e[0m\]"
 fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    #PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-      PS1="\[\e[0;31m\]\u \[\e[0;32m\]\w\[\e[0;93m\]\$(parse_git_branch)\[\033[00m\]$ \[\e[0m\]"
-
+ PS1="\[\e[0;31m\]\u: \[\e[0;32m\]\w\[\e[0;93m\]\$(parse_git_branch)\[\033[00m\]$ \[\e[0m\]"
     ;;
 *)
     ;;
@@ -128,3 +118,13 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#trap 'echo 🦊' 3 2
+
+alias cls="clear"
+alias github="cd ~/Github"
+alias windows="~/Github/winapps/bin/winapps manual"
