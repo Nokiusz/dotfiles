@@ -28,5 +28,12 @@
   },
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
-  }
+  },
+  "editor.wordWrapColumn": 160,
+  "editor.wordWrap": "wordWrapColumn",
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.excludeLanguages": ["markdown"]
 }

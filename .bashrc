@@ -127,4 +127,5 @@ export NVM_DIR="$HOME/.nvm"
 
 alias cls="clear"
 alias github="cd ~/Github"
+alias rhapsody="cd ~/Github/rhapsody ; node index.js"
 alias windows="~/Github/winapps/bin/winapps manual"
