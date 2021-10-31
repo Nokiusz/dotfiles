@@ -35,5 +35,25 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "emmet.excludeLanguages": ["markdown"]
+  "emmet.excludeLanguages": ["markdown"],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": ""
+    },
+    {
+      "server": "localhost",
+      "database": "",
+      "authenticationType": "SqlLogin",
+      "user": "sa",
+      "password": "",
+      "emptyPasswordInput": false,
+      "savePassword": true,
+      "profileName": "sql express"
+    }
+  ],
+  "explorer.confirmDelete": false
 }
