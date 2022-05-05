@@ -1,4 +1,4 @@
-# .bashrc
+# .zshrc
 
 ![.zhsrc](screenshots/zsh.png)
 
