@@ -7,10 +7,21 @@ function parse_git_branch() {
  
 setopt PROMPT_SUBST
 
-PROMPT="$fg[red]%}%n:$fg[green]%}%~ $fg[yellow]%}\$(parse_git_branch)\$reset_color%}$ "
+PROMPT='%(?.🦊.?%?)%f %B%F{green}%~%f%b %F{yellow} $(parse_git_branch) %f$ '
+
 
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 
+
+alias cd..='cd ..'
+alias CD='cd'
+alias cls="clear"
+alias ip="ipconfig getifaddr en0"
+alias ls='ls -G'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias sl='ls -G'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
