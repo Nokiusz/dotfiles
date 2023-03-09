@@ -1,7 +1,6 @@
 {
   "window.titleBarStyle": "custom",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Material Theme High Contrast",
   "files.exclude": {
     "**/.DS_Store": false,
     "**/*.meta": true
@@ -17,7 +16,6 @@
   "terminal.integrated.fontSize": 18,
   "editor.fontFamily": "'Cascadia Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.formatOnSave": true,
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
   "editor.wordWrapColumn": 160,
@@ -30,5 +28,24 @@
   "latex-workshop.view.pdf.viewer": "tab",
   "explorer.confirmDelete": false,
   "editor.inlineSuggest.enabled": true,
-  "mssql.connections": []
+  "mssql.connections": [],
+  "tabnine.experimentalAutoImports": true,
+  "workbench.colorTheme": "Community Material Theme High Contrast",
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.requireConfig": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[python]": {
+    "editor.formatOnType": true
+  }
 }
